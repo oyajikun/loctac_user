@@ -1,0 +1,6 @@
+[submodule "app/models"]
+	path = app/models
+	url = git@github.com:oyajikun/models.git
+[submodule "db/migrate"]
+	path = db/migrate
+	url = git@github.com:oyajikun/migrate.git
