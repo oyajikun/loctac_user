@@ -7,3 +7,6 @@
 [submodule "vendor/plugins/user_session_extender"]
 	path = vendor/plugins/user_session_extender
 	url = git@github.com:oyajikun/user_session_extender.git
+[submodule "vendor/plugins/mobile"]
+	path = vendor/plugins/mobile
+	url = git@github.com:oyajikun/mobile.git
