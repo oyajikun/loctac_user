@@ -1,0 +1,8 @@
+<h1><%= t("title.user.update", :default => "User Update") %></h1>
+
+<% form_for(@user, :url => user_path) do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :locals => {:f => f, :label => t("submit.update", :default => "update")} %>
+<% end %>
+
+<%= link_to t("linkname.user.show"), user_path %>

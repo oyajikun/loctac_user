@@ -19,6 +19,8 @@ Rails::Initializer.run do |config|
   # config.gem "hpricot", :version => '0.6', :source => "http://code.whytheluckystiff.net"
   # config.gem "sqlite3-ruby", :lib => "sqlite3"
   # config.gem "aws-s3", :lib => "aws/s3"
+  config.gem "ZenTest", :version => '4.1.4'
+  config.gem "authlogic"
 
   # Only load the plugins named here, in the order given (default is alphabetical).
   # :all can be used as a placeholder for all plugins not explicitly named
@@ -33,9 +35,23 @@ Rails::Initializer.run do |config|
 
   # Set Time.zone default to the specified zone and make Active Record auto-convert to this zone.
   # Run "rake -D time" for a list of tasks for finding time zone names.
-  config.time_zone = 'UTC'
+  config.time_zone = 'Tokyo'
 
   # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
   # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}')]
-  # config.i18n.default_locale = :de
+  config.i18n.default_locale = 'ja'
+end
+
+ActionView::Base.field_error_proc = Proc.new do |html_tag, instance|
+  if html_tag =~ /<label/
+    if instance.error_message.kind_of?(String)
+      error_message = instance.error_message
+    else
+      error_message = instance.error_message[0]
+    end
+    %|<div class="fieldWithErrors">#{html_tag} <span class="error">#{error_message}</span></div>|
+#    %|<div class="fieldWithErrors">#{html_tag} <span class="error">#{[instance.error_message].join(', ')}</span></div>|
+  else
+    html_tag
+  end
 end

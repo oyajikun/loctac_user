@@ -1,0 +1,12 @@
+<h1>Hello, <%= h @user.email %>!</h1>
+
+<p>
+  あなたは<%= h @user.login_count %>回目のログインです。<br/>
+  <% if @user.login_count > 1 -%>
+  前回は<%= l @user.last_login_at %>にログインしました。
+  <% end -%>
+</p>
+
+<%= link_to t("linkname.user.edit"), edit_user_path %> |
+<%= link_to t("linkname.user.delete"), user_path, :method => :delete %> |
+<%= link_to t("linkname.user_session.delete"), logout_path, :method => :delete %>

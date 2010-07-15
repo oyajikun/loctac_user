@@ -1,0 +1,6 @@
+<h1><%= t("title.user.create") %></h1>
+
+<% form_for(@user, :url => user_path) do |f| %>
+  <%= f.error_messages %>
+  <%= render :partial => "form", :locals => {:f => f, :label => t("submit.create")} %>
+<% end %>

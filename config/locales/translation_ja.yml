@@ -1,0 +1,27 @@
+ja: 
+  flash:
+    login:
+      success: "ログインに成功しました。"
+      failure: "ログインに失敗しました。"
+    logout:
+      done: "ログアウトしました。"
+    user:
+      create:
+        success: "ユーザの新規作成に成功しました。"
+      update:
+        success: "ユーザ情報の更新に成功しました。"
+
+  title:
+    user:
+      create: "ユーザの新規作成"
+      update: "ユーザ情報の更新"
+
+  submit:
+    create: "新規作成"
+    update: "更新"
+    login: "ログイン"
+
+  authlogic:
+    error_messages:
+      email_invalid: "は有効なフォーマットのメールアドレスを入力して下さい。"
+
