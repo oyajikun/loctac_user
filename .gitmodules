@@ -4,6 +4,6 @@
 [submodule "db/migrate"]
 	path = db/migrate
 	url = git@github.com:oyajikun/migrate.git
-[submodule "vendor/plugins/user_session"]
-	path = vendor/plugins/user_session
-	url = git://github.com/oyajikun/user_session.git
+[submodule "vendor/plugins/user_session_extender"]
+	path = vendor/plugins/user_session_extender
+	url = git@github.com:oyajikun/user_session_extender.git
