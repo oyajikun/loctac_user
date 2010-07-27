@@ -1,6 +1,6 @@
 <h1><%= t("title.user_session.new", :default => "Login") %></h1>
 
-<% form_for @user_session, :url => user_session_path(require_docomo_guid_query) do |f| -%>
+<% form_for @user_session, :url => user_session_path do |f| -%>
   <p>
     <%= f.submit t("submit.easy_login", :default => "Easy Login") %>
   </p>
