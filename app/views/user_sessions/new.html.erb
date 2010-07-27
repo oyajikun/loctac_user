@@ -23,3 +23,8 @@
 <p>
   <%= link_to t("linkname.user.new"), new_user_path %>
 </p>
+
+<p>
+  <%= mobile_position_link_to(:controller => :locations, :action => :main) %>
+  <%#= mobile_position_link_to(:controller => Mobile::Position::Config.locations["controller"], :action => Mobile::Position::Config.locations["action"]) %>
+</p>
