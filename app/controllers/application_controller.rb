@@ -7,8 +7,6 @@ class ApplicationController < ActionController::Base
 
   layout 'default'
   
-  helper_method :require_docomo_guid_query
-
   before_filter :debug
 
   # Scrub sensitive parameters from your log
@@ -19,10 +17,10 @@ class ApplicationController < ActionController::Base
   ###
 
   def debug
-#    logger.debug request.mobile.try(:ident_subscriber)
-  end
-
-  def require_docomo_guid_query
-#    request.mobile.is_a?(Jpmobile::Mobile::Docomo) ? {:guid => "ON"} : {}
+    logger.debug request.mobile.carrier
+    logger.debug request.mobile.try(:guid)
+    logger.debug request.mobile.docomo? ? "docomo" : "not docomo"
+    logger.debug request.mobile.au? ? "au" : "not au"
+    logger.debug request.mobile.softbank? ? "softbank" : "not softbank"
   end
 end
