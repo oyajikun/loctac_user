@@ -7,6 +7,10 @@
   <% end -%>
 </p>
 
+<div>
+  <%= link_to t("linkname.location.new"), new_location_path %>
+</div>
+
 <%= link_to t("linkname.user.edit"), edit_user_path %> |
 <%= link_to t("linkname.user.delete"), user_path, :method => :delete %> |
 <%= link_to t("linkname.user_session.delete"), logout_path, :method => :delete %>
