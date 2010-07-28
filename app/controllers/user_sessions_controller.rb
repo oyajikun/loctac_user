@@ -7,8 +7,7 @@ class UserSessionsController < ApplicationController
   end
 
   def create
-    @user_session = UserSession.new(params[:user_session])
-#    @user_session = UserSession.new(params[:user_session], request.mobile.try(:ident_subscriber))
+    @user_session = UserSession.new(params[:user_session], request.mobile.try(:guid))
     respond_to do |format|
       if @user_session.save
         flash[:notice] = I18n.t("flash.login.success", :default => "login success")
