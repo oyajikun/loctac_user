@@ -1,6 +1,6 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resource :location, :only => [:new, :regist]
-  map.connect 'location/regist/:crypted_token', :controller => :locations, :action => :regist
+  map.resource :location, :only => [:new]
+  map.connect 'locations/regist/:crypted_token', :controller => :locations, :action => :regist
 
   map.resource :user
   map.connect 'user/new/:token', :controller => :users, :action => :new
