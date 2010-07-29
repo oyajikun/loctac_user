@@ -10,3 +10,6 @@
 [submodule "vendor/plugins/mobile"]
 	path = vendor/plugins/mobile
 	url = git@github.com:oyajikun/mobile.git
+[submodule "vendor/plugins/crypt"]
+	path = vendor/plugins/crypt
+	url = git@github.com:oyajikun/crypt.git
