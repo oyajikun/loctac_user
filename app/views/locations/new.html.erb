@@ -2,5 +2,9 @@
 <p>Find me in app/views/locations/new.html.erb</p>
 
 <p>
-  <%= mobile_position_link_to(:controller => :locations, :action => :regist, :expired_at => l(5.minutes.since)) %>
+  このページが表示されてから、x 分以内に位置登録を完了してください。
+</p>
+
+<p>
+  <%= mobile_position_link_to(:controller => :locations, :action => :regist, :expired_at => l(1.minutes.since, :format => :long2)) %>
 </p>

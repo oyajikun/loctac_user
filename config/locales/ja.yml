@@ -22,6 +22,7 @@ ja:
       default: "%Y/%m/%d %H:%M:%S"
       short: "%y/%m/%d %H:%M"
       long: "%Y年%m月%d日(%a) %H時%M分%S秒 %Z"
+      long2: "%Y/%m/%d %H:%M:%S %Z"
     am: "午前"
     pm: "午後"
 
