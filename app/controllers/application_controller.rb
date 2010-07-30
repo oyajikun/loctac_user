@@ -19,8 +19,6 @@ class ApplicationController < ActionController::Base
   def debug
     logger.debug request.mobile.carrier
     logger.debug request.mobile.try(:guid)
-    logger.debug request.mobile.docomo? ? "docomo" : "not docomo"
-    logger.debug request.mobile.au? ? "au" : "not au"
-    logger.debug request.mobile.softbank? ? "softbank" : "not softbank"
+    logger.debug crypted_token
   end
 end
