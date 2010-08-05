@@ -13,3 +13,9 @@
 [submodule "db"]
 	path = db
 	url = git@github.com:oyajikun/db.git
+[submodule "spec/fixtures"]
+	path = spec/fixtures
+	url = git@github.com:oyajikun/spec_fixtures.git
+[submodule "spec/models"]
+	path = spec/models
+	url = git@github.com:oyajikun/spec_models.git
