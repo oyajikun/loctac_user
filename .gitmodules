@@ -1,9 +1,6 @@
 [submodule "app/models"]
 	path = app/models
 	url = git@github.com:oyajikun/models.git
-[submodule "db/migrate"]
-	path = db/migrate
-	url = git@github.com:oyajikun/migrate.git
 [submodule "vendor/plugins/user_session_extender"]
 	path = vendor/plugins/user_session_extender
 	url = git@github.com:oyajikun/user_session_extender.git
