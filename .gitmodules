@@ -1,6 +1,3 @@
-[submodule "app/models"]
-	path = app/models
-	url = git@github.com:oyajikun/models.git
 [submodule "vendor/plugins/user_session_extender"]
 	path = vendor/plugins/user_session_extender
 	url = git@github.com:oyajikun/user_session_extender.git
@@ -10,12 +7,3 @@
 [submodule "vendor/plugins/crypt"]
 	path = vendor/plugins/crypt
 	url = git@github.com:oyajikun/crypt.git
-[submodule "db"]
-	path = db
-	url = git@github.com:oyajikun/db.git
-[submodule "spec/fixtures"]
-	path = spec/fixtures
-	url = git@github.com:oyajikun/spec_fixtures.git
-[submodule "spec/models"]
-	path = spec/models
-	url = git@github.com:oyajikun/spec_models.git
