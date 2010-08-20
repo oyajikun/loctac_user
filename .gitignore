@@ -2,9 +2,6 @@
 log/*.log
 tmp/**/*
 nbproject/*
-config/database.yml
+config/*.yml
 db/schema.rb
 .autotest
-config/carrier_gateway.yml
-config/local_ip_address.yml
-config/crypted_token.yml
