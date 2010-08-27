@@ -43,7 +43,7 @@ class LocationsController < ApplicationController
     end
 
     # このトークンには有効期限が含まれているので、有効期限かどうかチェックする
-    if Time.now > DateTime.strptime(request.decrypt_token[:expired_at], I18n.t("time.formats.long2"))
+    if Time.now > DateTime.strptime(request.env["decrypted_token"][:expired_at], I18n.t("time.formats.long2"))
       render :text => "this request is expire."
       return false
     end

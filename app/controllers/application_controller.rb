@@ -19,7 +19,6 @@ class ApplicationController < ActionController::Base
   def debug
     logger.debug request.mobile.carrier
     logger.debug request.mobile.try(:guid)
-    logger.debug request.decrypt_token
-#    logger.debug request.env["decrypt_token"]
+    logger.debug request.env["decrypted_token"]
   end
 end
