@@ -19,6 +19,16 @@ class LocationsController < ApplicationController
   end
 
   def result
+    # ImageConverterを使う時のインターフェースの使用イメージ
+#    @my_units = MyUnit.find(:all)
+#    @my_units.each do |my_unit|
+#      my_unit.image_url(:r => 0.9)
+#    end
+#    
+#    params.update({:id => id, :f => "png"})
+#    config/image_converter.yml
+#    host: imgcon.jp
+#    Image::URL.build(params)
   end
 
   ###
