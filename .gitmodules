@@ -16,3 +16,6 @@
 [submodule "spec/fixtures"]
 	path = spec/fixtures
 	url = git@github.com:oyajikun/loctac_spec_fixtures.git
+[submodule "spec/models"]
+	path = spec/models
+	url = git@github.com:oyajikun/loctac_spec_models_100829.git
