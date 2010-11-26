@@ -7,9 +7,6 @@
 [submodule "vendor/plugins/crypt"]
 	path = vendor/plugins/crypt
 	url = git@github.com:oyajikun/crypt.git
-[submodule "db"]
-	path = db
-	url = git@github.com:oyajikun/loctac_db.git
 [submodule "app/models"]
 	path = app/models
 	url = git@github.com:oyajikun/loctac_app_models.git
