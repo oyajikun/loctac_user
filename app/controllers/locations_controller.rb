@@ -15,6 +15,9 @@ class LocationsController < ApplicationController
     # TODO:トランザクションが正常に完了したら、state を初期化する
     session[:location_state] = nil
 
+    logger.debug request.mobile.position.lat
+    logger.debug request.mobile.position.lon
+
     redirect_to :action => :result
   end
 
