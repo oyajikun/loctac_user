@@ -3,5 +3,4 @@ log/*.log
 tmp/**/*
 nbproject/*
 config/*.yml
-db/schema.rb
 .autotest
